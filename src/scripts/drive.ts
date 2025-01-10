@@ -133,7 +133,6 @@ type ConditionerSettings = {
   mantra: string;
 };
 
-
 const start = async () => {
   const settingsString = new URLSearchParams(window.location.search).get(
     "conditioner",
