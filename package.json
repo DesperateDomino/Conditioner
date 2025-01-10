@@ -1,6 +1,5 @@
 {
   "name": "conditioner",
-  "description": "To help pretty girls apply their conditioner",
   "private": true,
   "version": "0.1.0",
   "type": "module",

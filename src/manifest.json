@@ -1,4 +1,6 @@
 {
+  "name": "Conditioner",
+  "description": "Helps good girls apply their conditioner",
   "manifest_version": 3,
   "icons": {
     "16": "icon/16.png",
