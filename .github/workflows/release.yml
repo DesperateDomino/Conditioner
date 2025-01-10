@@ -25,9 +25,9 @@ jobs:
         run: yarn build
 
       - name: Zip
-        run: zip -r conditioner.zip dist/*
+        run: cd dist && zip -r conditioner.zip ./*
 
       - name: Release
         uses: softprops/action-gh-release@v2
         with:
-          files: conditioner.zip
+          files: dist/conditioner.zip
