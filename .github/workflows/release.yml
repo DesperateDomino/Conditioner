@@ -1,0 +1,33 @@
+name: Create Release
+on:
+  push:
+    tags: '*'
+
+jobs:
+  build:
+    name: Create Release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'yarn'
+
+      - name: Install
+        run: yarn
+
+      - name: Lint
+        run: yarn lint
+
+      - name: Build
+        run: yarn build
+
+      - name: Zip
+        run: zip -r conditioner.zip dist
+
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: conditioner.zip
