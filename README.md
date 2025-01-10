@@ -1,1 +1,2 @@
-![Conditioner](public/header.png)
+![Conditioner](docs/header.png)
+![Instructions](docs/instructions.png)
