@@ -1,0 +1,24 @@
+{
+  "name": "conditioner",
+  "description": "To help pretty girls apply their conditioner",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "watch": "vite build --watch --mode development",
+    "build": "vite build",
+    "lint": "biome check ./src && tsc --noEmit",
+    "format": "biome check --write ./src"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@types/webextension-polyfill": "0.12.1",
+    "typescript": "5.7.2",
+    "vite": "6.0.7",
+    "vite-plugin-web-extension": "4.4.3",
+    "webextension-polyfill": "0.12.0"
+  },
+  "packageManager": "yarn@4.6.0"
+}
